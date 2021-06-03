@@ -21,7 +21,7 @@ class Employee(models.Model):
                                   verbose_name='Позиция')
 
     def __str__(self):
-        return f"{self.name} {self.last_name}"
+        return f"{self.name} {self.surname} {self.last_name} {self.address} {self.positions}"
 
     class Meta:
         verbose_name_plural = 'Employees'

@@ -5,9 +5,11 @@
     <title>Показать сотрудников</title>
 </head>
 <body>
-    {% for i in emp %}
-    <h5>{{i}}</h5>
-
+    <ol>
+        {% for i in emp %}
+        <li><h5>{{i}}</h5></li>
     {%endfor%}
+    </ol>
+
 </body>
 </html>

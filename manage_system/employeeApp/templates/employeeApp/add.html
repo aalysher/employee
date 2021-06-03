@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавние сотрудников</title>
+</head>
+<body>
+<form action="." method="post">
+    {{emp_add.as_p}}
+    {{project_add.as_p}}
+    {{pos_add.as_p}}
+    {{sal_add.as_p}}
+    {{char_add.as_p}}
+    {{emp_add.as_p}}
+    {% csrf_token %}
+    <input type="submit" value="Save">
+</form>
+</body>
+</html>
