@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1>EmployeeApp user</h1>
-  <h1><a href="{% url 'emp_add' %}">Добавить сотрудника</a></h1>
-  <h1><a href="{% url 'project_add' %}">Добавить проект</a></h1>
-  <h1><a href="{% url 'pos_add' %}">Добавить должность</a></h1>
-  <h1><a href="{% url 'sal_add' %}">Добавить зарплату</a></h1>
-  <h1><a href="{% url 'char_add' %}">Добавить характеристику</a></h1>
-  <h1><a href="{% url 'emp_show' %}">Показать сотрудников</a></h1>
+<div class="container">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+    <span class="navbar-text">
+      Employee's user
+    </span>
+        </div>
+    </nav>
+    <div class="list-group">
+        <a href="{% url 'emp_add' %}" class="list-group-item list-group-item-action">Добавить сотрудника</a>
+        <a href="{% url 'project_add' %}" class="list-group-item list-group-item-action">Добавить проект</a>
+        <a href="{% url 'sal_add' %}" class="list-group-item list-group-item-action">Добавить зарплату</a>
+        <a href="{% url 'pos_add' %}" class="list-group-item list-group-item-action">Добавить должность</a>
+        <a href="{% url 'char_add' %}" class="list-group-item list-group-item-action">Добавить характеристику</a>
+        <a href="{% url 'emp_show' %}" class="list-group-item list-group-item-action">Показать сотрудников</a>
+    </div>
+</div>
 </body>
 </html>

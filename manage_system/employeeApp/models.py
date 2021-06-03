@@ -43,6 +43,9 @@ class Salary(models.Model):
                                   on_delete=models.DO_NOTHING,
                                   verbose_name='Сотрудник:')
 
+    def __str__(self):
+        return f"{self.value} {self.start_date} {self.end_date} {self.employees}"
+
     class Meta:
         verbose_name_plural = 'Salaries'
 
@@ -51,6 +54,9 @@ class Characteristic(models.Model):
     id = models.OneToOneField(Employee, on_delete=models.DO_NOTHING, primary_key=True)
     value = models.CharField('Характеристика:',
                              max_length=50)
+
+    def __str__(self):
+        return self.value
 
 
 class Project(models.Model):
