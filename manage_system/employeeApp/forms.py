@@ -8,8 +8,6 @@ class EmployeeForm(forms.ModelForm):
         fields = '__all__'
 
 
-#
-
 class ProjectForm(forms.ModelForm):
     class Meta:
         model = Project
